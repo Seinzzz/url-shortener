@@ -1,0 +1,4 @@
+name: url-shortener
+variables:
+  - name: localhost
+    value: http://localhost

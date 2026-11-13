@@ -1,0 +1,22 @@
+info:
+  name: Delete Link
+  type: http
+  seq: 4
+
+http:
+  method: DELETE
+  url: '{{localhost}}:3090/api/links/:code'
+  params:
+    - name: code
+      value: my-link
+      type: path
+  body:
+    type: json
+    data: ''
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

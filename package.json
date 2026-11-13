@@ -1,0 +1,19 @@
+{
+  "name": "url-shortener",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "bun run --hot src/index.ts",
+    "start": "bun run src/index.ts",
+    "test": "bun test",
+    "test:watch": "bun test --watch",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "hono": "^4.13.14"
+  },
+  "devDependencies": {
+    "@types/bun": "^1.4.4",
+    "typescript": "^5.9.3"
+  }
+}

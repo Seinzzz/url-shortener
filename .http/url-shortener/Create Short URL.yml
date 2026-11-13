@@ -1,0 +1,22 @@
+info:
+  name: Create Short URL
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: '{{localhost}}:3090/api/links'
+  body:
+    type: json
+    data: |-
+      {
+        "url": "https://www.skills.sh/hot",
+        "ttlSeconds": 20
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
